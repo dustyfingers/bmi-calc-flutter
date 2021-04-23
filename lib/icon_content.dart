@@ -1,12 +1,6 @@
 import 'package:flutter/material.dart';
 
-const textColor = 0xFF8D8E98;
-const iconSize = 80.0;
-const spacer = SizedBox(height: 15.0);
-const labelTextStyle = TextStyle(
-  fontSize: 18.0,
-  color: Color(textColor),
-);
+import 'package:bmi_calculator_flutter/constants.dart';
 
 class IconContent extends StatelessWidget {
   final IconData icon;
@@ -20,10 +14,10 @@ class IconContent extends StatelessWidget {
       children: <Widget>[
         Icon(
           icon,
-          size: iconSize,
+          size: kIconSize,
         ),
-        spacer,
-        Text(label, style: labelTextStyle),
+        kSpacer,
+        Text(label, style: kLabelTextStyle),
       ],
     );
   }

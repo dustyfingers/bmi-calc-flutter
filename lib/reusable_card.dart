@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:bmi_calculator_flutter/constants.dart';
+
 class ReusableCard extends StatelessWidget {
   ReusableCard({@required this.color, this.cardChild, this.onPress});
 
@@ -14,7 +16,7 @@ class ReusableCard extends StatelessWidget {
       onTap: onPress,
       child: Container(
         child: cardChild,
-        margin: EdgeInsets.all(15.0),
+        margin: kStandardMargin,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10.0),
           color: color,
