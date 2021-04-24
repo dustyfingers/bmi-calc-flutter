@@ -108,6 +108,7 @@ class _InputPageState extends State<InputPage> {
                     SliderTheme(
                       data: SliderThemeData(
                         activeTrackColor: Colors.white,
+                        inactiveTrackColor: kInactiveSliderColor,
                         thumbColor: kCallToActionColor,
                         thumbShape: RoundSliderThumbShape(
                           enabledThumbRadius: 16.0,
