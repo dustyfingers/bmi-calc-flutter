@@ -6,7 +6,7 @@ import 'package:bmi_calculator_flutter/components/round_icon_button.dart';
 import 'package:bmi_calculator_flutter/components/calculate_button.dart';
 import 'package:bmi_calculator_flutter/components/reusable_card.dart';
 import 'package:bmi_calculator_flutter/components/icon_content.dart';
-import 'package:bmi_calculator_flutter/constants.dart';
+import 'package:bmi_calculator_flutter/config/constants.dart';
 
 enum Gender { male, female, nonbinary }
 
