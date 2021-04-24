@@ -105,17 +105,27 @@ class _InputPageState extends State<InputPage> {
                         ),
                       ],
                     ),
-                    Slider(
-                      value: height.toDouble(),
-                      min: 100,
-                      max: 250,
-                      activeColor: kActiveSliderColor,
-                      inactiveColor: kInactiveSliderColor,
-                      onChanged: (double newValue) {
-                        setState(() {
-                          height = newValue.toInt();
-                        });
-                      },
+                    SliderTheme(
+                      data: SliderThemeData(
+                        activeTrackColor: Colors.white,
+                        thumbColor: kCallToActionColor,
+                        thumbShape: RoundSliderThumbShape(
+                          enabledThumbRadius: 16.0,
+                        ),
+                        overlayColor: kTransCallToActionColor,
+                        overlayShape:
+                            RoundSliderOverlayShape(overlayRadius: 30.0),
+                      ),
+                      child: Slider(
+                        value: height.toDouble(),
+                        min: 100,
+                        max: 250,
+                        onChanged: (double newValue) {
+                          setState(() {
+                            height = newValue.toInt();
+                          });
+                        },
+                      ),
                     ),
                   ],
                 )),
@@ -137,7 +147,7 @@ class _InputPageState extends State<InputPage> {
             ),
           ),
           Container(
-            color: kBottomContainerColor,
+            color: kCallToActionColor,
             margin: kTopMargin,
             width: double.infinity,
             height: kBottomContainerHeight,
